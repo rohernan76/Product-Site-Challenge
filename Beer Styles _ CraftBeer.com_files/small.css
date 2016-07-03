@@ -1,0 +1,147 @@
+.plugin #providers .provider {
+  width: 16px !important;
+}
+
+.plugin #providers .provider .name {
+  display: none !important;
+}
+
+.plugin #providers .provider .button {
+  background: url("/img/api/socialize/providers/logo/sprite_16_16.png") no-repeat scroll 0 0 transparent !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+
+.plugin #providers .provider #button_yahoo {
+  background-position: -2px 50% !important;
+}
+
+.plugin #providers .provider #button_wordpress {
+  background-position: -22px 50% !important;
+}
+
+.plugin #providers .provider #button_vkontakte {
+  background-position: -42px 50% !important;
+}
+
+.plugin #providers .provider #button_twitter {
+  background-position: -62px 50% !important;
+}
+
+.plugin #providers .provider #button_paypal {
+  background-position: -82px 50% !important;
+}
+
+.plugin #providers .provider #button_openid {
+  background-position: -102px 50% !important;
+}
+
+.plugin #providers .provider #button_livejournal {
+  background-position: -122px 50% !important;
+}
+
+.plugin #providers .provider #button_linkedin {
+  background-position: -142px 50% !important;
+}
+
+.plugin #providers .provider #button_hyves {
+  background-position: -162px 50% !important;
+}
+
+.plugin #providers .provider #button_google {
+  background-position: -182px 50% !important;
+}
+
+.plugin #providers .provider #button_facebook {
+  background-position: -202px 50% !important;
+}
+
+.plugin #providers .provider #button_steam {
+  background-position: -222px 50% !important;
+}
+
+.plugin #providers .provider #button_windowslive {
+  background-position: -242px 50% !important;
+}
+
+.plugin #providers .provider #button_mailru {
+  background-position: -262px 50% !important;
+}
+
+.plugin #providers .provider #button_stackexchange {
+  background-position: -282px 50% !important;
+}
+
+.plugin #providers .provider #button_github {
+  background-position: -302px 50% !important;
+}
+
+.plugin #providers .provider #button_foursquare {
+  background-position: -322px 50% !important;
+}
+
+.plugin #providers .provider #button_blogger {
+  background-position: -342px 50% !important;
+}
+
+.plugin #providers .provider #button_disqus {
+  background-position: -362px 50% !important;
+}
+
+.plugin #providers .provider #button_odnoklassniki {
+  background-position: -382px 50% !important;
+}
+
+.plugin #providers .provider #button_youtube {
+  background-position: -402px 50% !important;
+}
+
+.plugin #providers .provider #button_xing {
+  background-position: -422px 50% !important;
+}
+
+.plugin #providers .provider #button_skyrock {
+  background-position: -442px 50% !important;
+}
+
+.plugin #providers .provider #button_vimeo {
+  background-position: -462px 50% !important;
+}
+
+.plugin #providers .provider #button_reddit {
+  background-position: -482px 50% !important;
+}
+
+.plugin #providers .provider #button_amazon {
+  background-position: -502px 50% !important;
+}
+
+.plugin #providers .provider #button_instagram {
+  background-position: -522px 50% !important;
+}
+
+.plugin #providers .provider #button_twitch {
+  background-position: -542px 50% !important;
+}
+
+.plugin #providers .provider #button_battlenet {
+  background-position: -562px 50% !important;
+}
+
+.plugin #providers .provider #button_pinterest {
+  background-position: -582px 50% !important;
+}
+
+.plugin #providers .provider #button_dribbble {
+  background-position: -602px 50% !important;
+}
+
+.plugin #providers .provider #button_pixelpin {
+  background-position: -622px 50% !important;
+}
+
+.plugin .footer {
+  left: 2px !important;
+  line-height: 11px !important;
+  margin-top: 1px;
+}

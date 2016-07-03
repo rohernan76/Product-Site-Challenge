@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iBYOB</title>
+	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="old_style.css">
+</head>
+    <body>
+      <div id="content" class="container">
+      <section id="primary" class="site-content wide" role="main">
+    <!--Begin Main Content-->
+    <div id="main" role="main" class="style-finder">
+
+        <h1 id="beer-styles" class=""><a href="https://www.craftbeer.com/beer-styles" title="Beer Styles"><img src="craftbeer_logo_Fotor_sm.jpg" alt="Craft Beer" class="hidden-print"></a></h1>
+
+        <nav class="navbar navbar-default">
+        <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">HOME</a>
+        </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Recipes <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Ingredients</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">(placeholder)</li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <button type="button" class="btn btn-default btn-lg" aria-label="Left Align">
+              <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+              </button> 
+            </li>
+          </ul>
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+      </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+      </nav>
+    <div class="jumbotron">
+    	<h1>iBYOB</h1>
+    	 <p>I'll Brew Your Own Beer</p>
+    	   <p><a class="btn btn-primary btn-sm" href="#" role="button">Take me to the beer baron!!</a></p>
+	  </div>
+
+<!-- Main div for indicating beer styles -->
+
+        <h1 id="beer-styles" class=""><a href="https://www.iBYOB.com/beer-styles" title="Beer Styles"><img src="beer-styles-rv_Fotor_sm.jpg" alt="Beer Styles" class="hidden-print"></a></h1>
+        
+        <nav class="navbar navbar-default" id="simple-styles">
+          <ul class="nav navbar-nav justified">
+            <li class="form">
+              <form class="navbar-form navbar-left">
+              <div class="form-group"><i class="fa fa-search"></i> 
+            
+
+                <span class="twitter-typeahead" style="position: relative; display: inline-block;">
+                  <input class="tt-hint" type="text" autocomplete="off" spellcheck="off" disabled="" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);">
+                  <input id="search" class="form-control tt-query" name="search" type="text" placeholder="Find your Style..." onfocus="if (this.value == 'Find your Style...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Find your Style...';}" value="Find your Style..." autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;">
+                  <span style="position: absolute; left: -9999px; visibility: hidden; white-space: nowrap; font-family: futura-pt, Futura, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 17px; text-rendering: auto; text-transform: none;"></span>
+                  <span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"></span>
+                </span>
+              </div> 
+            </form>
+          </li>
+
+<!--           <li id="families" class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Style Families to Choose From 
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="https://www.iBYOB.com/beer-styles">View All Beer Styles</a></li>
+              <li><a href="https://www.iBYOB.com/parent/belgian-styles">Belgians</a></li>
+              <li><a href="https://www.iBYOB.com/parent/india-pale-ales">India Pale Ales</a></li>
+              <li><a href="https://www.iBYOB.com/parent/pale-ales">Pale Ales</a></li>
+              <li><a href="https://www.iBYOB.com/parent/stouts">Stouts</a></li>
+            </ul>
+          </li>        -->
+        </ul>
+      </nav>
+
+            <div class="" id="tags">
+                <label class="checkbox-inline"><input type="radio" name="tag" value="4130">Sour, Tart &amp; Funky</label>
+                <label class="checkbox-inline"><input type="radio" name="tag" value="4123">Crisp &amp; Clean</label>
+                <label class="checkbox-inline"><input type="radio" name="tag" value="4127">Dark &amp; Roasty</label>
+                <label class="checkbox-inline"><input type="radio" name="tag" value="4126">Malty &amp; Sweet</label>
+                <label class="checkbox-inline"><input type="radio" name="tag" value="4124">Hoppy &amp; Bitter</label>
+                <label class="checkbox-inline"><input type="radio" name="tag" value="4129">Fruity &amp; Spicy</label>
+
+            </div>       
+
+</div>
+  <br>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Type in Your Favorite Style<span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">American Amber Ales</a></li>
+          <li><a href="#">American Black Ales</a></li>
+          <li><a href="#">American Indian Pale Ales</a></li>
+          <li><a href="#">American Pale Ales</a></li>
+          <li><a href="#">American Stouts</a></li>
+          <li><a href="#">Belgian-style Blonde Ales</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" aria-label="...">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Style Families <span class="caret"></span></button>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li><a href="#">View All Beer Families</a></li>
+          <li><a href="#">Beglian Styles</a></li>
+          <li><a href="#">Bocks</a></li>
+          <li><a href="#">Brown Ales</a></li>
+          <li><a href="#">Dark Lagers</a></li>
+          <li><a href="#">Hybrid Beers</a></li>
+          <li><a href="#">Indian Pale Ales</a></li>
+          <li><a href="#">Pale Ales</a></li>
+          <li><a href="#">Pilsners & Pale Lagers</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+      
+    <h1 class="website_logo">
+          <table>
+          <tr>
+              <td class="c2">
+                  <img class="hop-logo" title="Your Passport to Hop Land" alt="Your Passport to Hop Land" src="Hop-Pale-Ale_large.jpg" />
+              </td>
+          </tr>
+        </table>
+    </h1>
+</body>
+</html>

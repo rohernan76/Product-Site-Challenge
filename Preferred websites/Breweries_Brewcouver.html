@@ -1,0 +1,787 @@
+
+<!DOCTYPE html>
+<html lang="en-US" >
+<head>
+    <title>Breweries &#8211; Brewcouver</title>
+<script type="text/javascript">var ajaxurl = "http://brewcouver.com/wp-admin/admin-ajax.php"</script><style id="critical-path-css" type='text/css'>/* non cached */ body,html{width:100%;height:100%;margin:0;padding:0}.page-preloader{top:0;left:0;z-index:999;position:fixed;height:100%;width:100%;text-align:center}.preloader-logo,.preloader-preview-area{top:50%;max-height:calc(50% - 20px);opacity:1}.preloader-preview-area{-webkit-animation-delay:-.2s;animation-delay:-.2s;-webkit-transform:translateY(100%);-ms-transform:translateY(100%);transform:translateY(100%);margin-top:10px;width:100%;text-align:center;position:absolute}.preloader-logo{max-width:90%;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%);margin:-10px auto 0;position:relative}.ball-pulse>div,.ball-scale>div,.line-scale>div{margin:2px;display:inline-block}.ball-pulse>div{width:15px;height:15px;border-radius:100%;-webkit-animation:ball-pulse .75s infinite cubic-bezier(.2,.68,.18,1.08);animation:ball-pulse .75s infinite cubic-bezier(.2,.68,.18,1.08)}.ball-pulse>div:nth-child(1){-webkit-animation-delay:-.36s;animation-delay:-.36s}.ball-pulse>div:nth-child(2){-webkit-animation-delay:-.24s;animation-delay:-.24s}.ball-pulse>div:nth-child(3){-webkit-animation-delay:-.12s;animation-delay:-.12s}@-webkit-keyframes ball-pulse{0%,80%{-webkit-transform:scale(1);transform:scale(1);opacity:1}45%{-webkit-transform:scale(.1);transform:scale(.1);opacity:.7}}@keyframes ball-pulse{0%,80%{-webkit-transform:scale(1);transform:scale(1);opacity:1}45%{-webkit-transform:scale(.1);transform:scale(.1);opacity:.7}}.ball-clip-rotate-pulse{position:relative;-webkit-transform:translateY(-15px);-ms-transform:translateY(-15px);transform:translateY(-15px);display:inline-block}.ball-clip-rotate-pulse>div{-webkit-animation-fill-mode:both;animation-fill-mode:both;position:absolute;top:0;left:0;border-radius:100%}.ball-clip-rotate-pulse>div:first-child{height:36px;width:36px;top:7px;left:-7px;-webkit-animation:ball-clip-rotate-pulse-scale 1s 0s cubic-bezier(.09,.57,.49,.9) infinite;animation:ball-clip-rotate-pulse-scale 1s 0s cubic-bezier(.09,.57,.49,.9) infinite}.ball-clip-rotate-pulse>div:last-child{position:absolute;width:50px;height:50px;left:-16px;top:-2px;background:0 0;border:2px solid;-webkit-animation:ball-clip-rotate-pulse-rotate 1s 0s cubic-bezier(.09,.57,.49,.9) infinite;animation:ball-clip-rotate-pulse-rotate 1s 0s cubic-bezier(.09,.57,.49,.9) infinite;-webkit-animation-duration:1s;animation-duration:1s}@-webkit-keyframes ball-clip-rotate-pulse-rotate{0%{-webkit-transform:rotate(0) scale(1);transform:rotate(0) scale(1)}50%{-webkit-transform:rotate(180deg) scale(.6);transform:rotate(180deg) scale(.6)}100%{-webkit-transform:rotate(360deg) scale(1);transform:rotate(360deg) scale(1)}}@keyframes ball-clip-rotate-pulse-rotate{0%{-webkit-transform:rotate(0) scale(1);transform:rotate(0) scale(1)}50%{-webkit-transform:rotate(180deg) scale(.6);transform:rotate(180deg) scale(.6)}100%{-webkit-transform:rotate(360deg) scale(1);transform:rotate(360deg) scale(1)}}@-webkit-keyframes ball-clip-rotate-pulse-scale{30%{-webkit-transform:scale(.3);transform:scale(.3)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes ball-clip-rotate-pulse-scale{30%{-webkit-transform:scale(.3);transform:scale(.3)}100%{-webkit-transform:scale(1);transform:scale(1)}}@-webkit-keyframes square-spin{25%{-webkit-transform:perspective(100px) rotateX(180deg) rotateY(0);transform:perspective(100px) rotateX(180deg) rotateY(0)}50%{-webkit-transform:perspective(100px) rotateX(180deg) rotateY(180deg);transform:perspective(100px) rotateX(180deg) rotateY(180deg)}75%{-webkit-transform:perspective(100px) rotateX(0) rotateY(180deg);transform:perspective(100px) rotateX(0) rotateY(180deg)}100%{-webkit-transform:perspective(100px) rotateX(0) rotateY(0);transform:perspective(100px) rotateX(0) rotateY(0)}}@keyframes square-spin{25%{-webkit-transform:perspective(100px) rotateX(180deg) rotateY(0);transform:perspective(100px) rotateX(180deg) rotateY(0)}50%{-webkit-transform:perspective(100px) rotateX(180deg) rotateY(180deg);transform:perspective(100px) rotateX(180deg) rotateY(180deg)}75%{-webkit-transform:perspective(100px) rotateX(0) rotateY(180deg);transform:perspective(100px) rotateX(0) rotateY(180deg)}100%{-webkit-transform:perspective(100px) rotateX(0) rotateY(0);transform:perspective(100px) rotateX(0) rotateY(0)}}.square-spin{display:inline-block}.square-spin>div{width:50px;height:50px;-webkit-animation:square-spin 3s 0s cubic-bezier(.09,.57,.49,.9) infinite;animation:square-spin 3s 0s cubic-bezier(.09,.57,.49,.9) infinite}.cube-transition{position:relative;-webkit-transform:translate(-25px,-25px);-ms-transform:translate(-25px,-25px);transform:translate(-25px,-25px);display:inline-block}.cube-transition>div{width:15px;height:15px;position:absolute;top:-5px;left:-5px;-webkit-animation:cube-transition 1.6s 0s infinite ease-in-out;animation:cube-transition 1.6s 0s infinite ease-in-out}.cube-transition>div:last-child{-webkit-animation-delay:-.8s;animation-delay:-.8s}@-webkit-keyframes cube-transition{25%{-webkit-transform:translateX(50px) scale(.5) rotate(-90deg);transform:translateX(50px) scale(.5) rotate(-90deg)}50%{-webkit-transform:translate(50px,50px) rotate(-180deg);transform:translate(50px,50px) rotate(-180deg)}75%{-webkit-transform:translateY(50px) scale(.5) rotate(-270deg);transform:translateY(50px) scale(.5) rotate(-270deg)}100%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg)}}@keyframes cube-transition{25%{-webkit-transform:translateX(50px) scale(.5) rotate(-90deg);transform:translateX(50px) scale(.5) rotate(-90deg)}50%{-webkit-transform:translate(50px,50px) rotate(-180deg);transform:translate(50px,50px) rotate(-180deg)}75%{-webkit-transform:translateY(50px) scale(.5) rotate(-270deg);transform:translateY(50px) scale(.5) rotate(-270deg)}100%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg)}}.ball-scale>div{border-radius:100%;height:60px;width:60px;-webkit-animation:ball-scale 1s 0s ease-in-out infinite;animation:ball-scale 1s 0s ease-in-out infinite}@-webkit-keyframes ball-scale{0%{-webkit-transform:scale(0);transform:scale(0)}100%{-webkit-transform:scale(1);transform:scale(1);opacity:0}}@keyframes ball-scale{0%{-webkit-transform:scale(0);transform:scale(0)}100%{-webkit-transform:scale(1);transform:scale(1);opacity:0}}.line-scale>div{-webkit-animation-fill-mode:both;animation-fill-mode:both;width:5px;height:50px;border-radius:2px}.line-scale>div:nth-child(1){-webkit-animation:line-scale 1s -.5s infinite cubic-bezier(.2,.68,.18,1.08);animation:line-scale 1s -.5s infinite cubic-bezier(.2,.68,.18,1.08)}.line-scale>div:nth-child(2){-webkit-animation:line-scale 1s -.4s infinite cubic-bezier(.2,.68,.18,1.08);animation:line-scale 1s -.4s infinite cubic-bezier(.2,.68,.18,1.08)}.line-scale>div:nth-child(3){-webkit-animation:line-scale 1s -.3s infinite cubic-bezier(.2,.68,.18,1.08);animation:line-scale 1s -.3s infinite cubic-bezier(.2,.68,.18,1.08)}.line-scale>div:nth-child(4){-webkit-animation:line-scale 1s -.2s infinite cubic-bezier(.2,.68,.18,1.08);animation:line-scale 1s -.2s infinite cubic-bezier(.2,.68,.18,1.08)}.line-scale>div:nth-child(5){-webkit-animation:line-scale 1s -.1s infinite cubic-bezier(.2,.68,.18,1.08);animation:line-scale 1s -.1s infinite cubic-bezier(.2,.68,.18,1.08)}@-webkit-keyframes line-scale{0%,100%{-webkit-transform:scaley(1);transform:scaley(1)}50%{-webkit-transform:scaley(.4);transform:scaley(.4)}}@keyframes line-scale{0%,100%{-webkit-transform:scaley(1);transform:scaley(1)}50%{-webkit-transform:scaley(.4);transform:scaley(.4)}}.ball-scale-multiple{position:relative;-webkit-transform:translateY(30px);-ms-transform:translateY(30px);transform:translateY(30px);display:inline-block}.ball-scale-multiple>div{border-radius:100%;position:absolute;left:-30px;top:0;opacity:0;margin:0;width:50px;height:50px;-webkit-animation:ball-scale-multiple 1s 0s linear infinite;animation:ball-scale-multiple 1s 0s linear infinite}.ball-scale-multiple>div:nth-child(2),.ball-scale-multiple>div:nth-child(3){-webkit-animation-delay:-.2s;animation-delay:-.2s}@-webkit-keyframes ball-scale-multiple{0%{-webkit-transform:scale(0);transform:scale(0);opacity:0}5%{opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:0}}@keyframes ball-scale-multiple{0%{-webkit-transform:scale(0);transform:scale(0);opacity:0}5%{opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:0}}.ball-pulse-sync{display:inline-block}.ball-pulse-sync>div{width:15px;height:15px;border-radius:100%;margin:2px;-webkit-animation-fill-mode:both;animation-fill-mode:both;display:inline-block}.ball-pulse-sync>div:nth-child(1){-webkit-animation:ball-pulse-sync .6s -.21s infinite ease-in-out;animation:ball-pulse-sync .6s -.21s infinite ease-in-out}.ball-pulse-sync>div:nth-child(2){-webkit-animation:ball-pulse-sync .6s -.14s infinite ease-in-out;animation:ball-pulse-sync .6s -.14s infinite ease-in-out}.ball-pulse-sync>div:nth-child(3){-webkit-animation:ball-pulse-sync .6s -70ms infinite ease-in-out;animation:ball-pulse-sync .6s -70ms infinite ease-in-out}@-webkit-keyframes ball-pulse-sync{33%{-webkit-transform:translateY(10px);transform:translateY(10px)}66%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}100%{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes ball-pulse-sync{33%{-webkit-transform:translateY(10px);transform:translateY(10px)}66%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}100%{-webkit-transform:translateY(0);transform:translateY(0)}}.transparent-circle{display:inline-block;border-top:.5em solid rgba(255,255,255,.2);border-right:.5em solid rgba(255,255,255,.2);border-bottom:.5em solid rgba(255,255,255,.2);border-left:.5em solid #fff;-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-animation:transparent-circle 1.1s infinite linear;animation:transparent-circle 1.1s infinite linear;width:50px;height:50px;border-radius:50%}.transparent-circle:after{border-radius:50%;width:10em;height:10em}@-webkit-keyframes transparent-circle{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes transparent-circle{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.ball-spin-fade-loader{position:relative;top:-10px;left:-10px;display:inline-block}.ball-spin-fade-loader>div{width:15px;height:15px;border-radius:100%;margin:2px;position:absolute;-webkit-animation:ball-spin-fade-loader 1s infinite linear;animation:ball-spin-fade-loader 1s infinite linear}.ball-spin-fade-loader>div:nth-child(1){top:25px;left:0;animation-delay:-.84s;-webkit-animation-delay:-.84s}.ball-spin-fade-loader>div:nth-child(2){top:17.05px;left:17.05px;animation-delay:-.72s;-webkit-animation-delay:-.72s}.ball-spin-fade-loader>div:nth-child(3){top:0;left:25px;animation-delay:-.6s;-webkit-animation-delay:-.6s}.ball-spin-fade-loader>div:nth-child(4){top:-17.05px;left:17.05px;animation-delay:-.48s;-webkit-animation-delay:-.48s}.ball-spin-fade-loader>div:nth-child(5){top:-25px;left:0;animation-delay:-.36s;-webkit-animation-delay:-.36s}.ball-spin-fade-loader>div:nth-child(6){top:-17.05px;left:-17.05px;animation-delay:-.24s;-webkit-animation-delay:-.24s}.ball-spin-fade-loader>div:nth-child(7){top:0;left:-25px;animation-delay:-.12s;-webkit-animation-delay:-.12s}.ball-spin-fade-loader>div:nth-child(8){top:17.05px;left:-17.05px;animation-delay:0s;-webkit-animation-delay:0s}@-webkit-keyframes ball-spin-fade-loader{50%{opacity:.3;-webkit-transform:scale(.4);transform:scale(.4)}100%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}@keyframes ball-spin-fade-loader{50%{opacity:.3;-webkit-transform:scale(.4);transform:scale(.4)}100%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}</style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="format-detection" content="telephone=no">
+<link rel="alternate" type="application/rss+xml" title="Brewcouver &raquo; Feed" href="http://brewcouver.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Brewcouver &raquo; Comments Feed" href="http://brewcouver.com/comments/feed/" />
+
+<link rel="shortcut icon" href="http://brewcouver.com/wp-content/uploads/2016/02/brewcouver-hop-black.png"  />
+<script type="text/javascript">
+window.abb = {};
+php = {};
+window.PHP = {};
+PHP.ajax = "http://brewcouver.com/wp-admin/admin-ajax.php";var mk_header_parallax, mk_banner_parallax, mk_page_parallax, mk_footer_parallax, mk_body_parallax;
+var mk_images_dir = "http://brewcouver.com/wp-content/themes/jupiter/assets/images",
+mk_theme_js_path = "http://brewcouver.com/wp-content/themes/jupiter/assets/js",
+mk_theme_dir = "http://brewcouver.com/wp-content/themes/jupiter",
+mk_captcha_placeholder = "Enter Captcha",
+mk_captcha_invalid_txt = "Invalid. Try again.",
+mk_captcha_correct_txt = "Captcha correct.",
+mk_responsive_nav_width = 1200,
+mk_vertical_header_back = "Back",
+mk_vertical_header_anim = "1",
+mk_check_rtl = true,
+mk_grid_width = 1200,
+mk_ajax_search_option = "disable",
+mk_preloader_bg_color = "#000000",
+mk_accent_color = "#24232a",
+mk_go_to_top =  "false",
+mk_smooth_scroll =  "true",
+mk_preloader_bar_color = "#24232a",
+mk_preloader_logo = "http://brewcouver.com/wp-content/uploads/2016/01/brewcouver-badge-white-e1456436343415.png";
+var mk_header_parallax = false,
+mk_banner_parallax = false,
+mk_page_parallax = false,
+mk_footer_parallax = false,
+mk_body_parallax = false,
+mk_no_more_posts = "No More Posts";
+</script>
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/brewcouver.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='dashicons-css'  href='http://brewcouver.com/wp-includes/css/dashicons.min.css?ver=4.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-jquery-ui-dialog-css'  href='http://brewcouver.com/wp-includes/css/jquery-ui-dialog.min.css?ver=4.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='layerslider-css'  href='http://brewcouver.com/wp-content/plugins/LayerSlider/static/css/layerslider.css?ver=5.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ls-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://brewcouver.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='http://brewcouver.com/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.1.6' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<link rel='stylesheet' id='js-media-query-css'  href='http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/min/media.css?ver=5.0.12' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-styles-css'  href='http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/min/styles.css?ver=5.0.12' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-icons-css'  href='http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/min/theme-icons.css?ver=5.0.12' type='text/css' media='all' />
+<link rel='stylesheet' id='google-font-api-special-1-css'  href='http://fonts.googleapis.com/css?family=Share+Tech+Mono%3A100italic%2C200italic%2C300italic%2C400italic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%2C100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=4.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='mk-style-css'  href='http://brewcouver.com/wp-content/themes/jupiter/style.css?ver=4.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-dynamic-styles-css'  href='http://brewcouver.com/wp-content/themes/jupiter/custom.css?ver=4.5.3' type='text/css' media='all' />
+<style id='theme-dynamic-styles-inline-css' type='text/css'>
+body { background-color:; } .mk-header { background-color:#111111; } .mk-header-bg { background-color:rgba(0,0,0,0.7); } .mk-classic-nav-bg { background-color:rgba(0,0,0,0.7); } #theme-page { background-color:#000000; } #mk-footer { background-color:; } #mk-boxed-layout { -webkit-box-shadow:0 0 0px rgba(0, 0, 0, 0); -moz-box-shadow:0 0 0px rgba(0, 0, 0, 0); box-shadow:0 0 0px rgba(0, 0, 0, 0); } .mk-news-tab .mk-tabs-tabs .is-active a, .mk-fancy-title.pattern-style span, .mk-fancy-title.pattern-style.color-gradient span:after, .page-bg-color { background-color:#000000; } .page-title { font-size:20px; color:; text-transform:uppercase; font-weight:400; letter-spacing:2px; } .page-subtitle { font-size:14px; line-height:100%; color:; font-size:14px; text-transform:none; } @font-face { font-family:'Pe-icon-line'; src:url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/pe-line-icons/Pe-icon-line.eot?lqevop'); src:url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/pe-line-icons/Pe-icon-line.eot?#iefixlqevop') format('embedded-opentype'), url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/pe-line-icons/Pe-icon-line.woff?lqevop') format('woff'), url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/pe-line-icons/Pe-icon-line.ttf?lqevop') format('truetype'), url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/pe-line-icons/Pe-icon-line.svg?lqevop#Pe-icon-line') format('svg'); font-weight:normal; font-style:normal; } @font-face { font-family:'FontAwesome'; src:url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/awesome-icons/fontawesome-webfont.eot?v=4.2'); src:url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/awesome-icons/fontawesome-webfont.eot?#iefix&v=4.2') format('embedded-opentype'), url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/awesome-icons/fontawesome-webfont.woff?v=4.2') format('woff'), url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/awesome-icons/fontawesome-webfont.ttf?v=4.2') format('truetype'); font-weight:normal; font-style:normal; } @font-face { font-family:'Icomoon'; src:url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/icomoon/fonts-icomoon.eot'); src:url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/icomoon/fonts-icomoon.eot?#iefix') format('embedded-opentype'), url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/icomoon/fonts-icomoon.woff') format('woff'), url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/icomoon/fonts-icomoon.ttf') format('truetype'), url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/icomoon/fonts-icomoon.svg#Icomoon') format('svg'); font-weight:normal; font-style:normal; } @font-face { font-family:'themeIcons'; src:url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/theme-icons/theme-icons.eot?wsvj4f'); src:url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/theme-icons/theme-icons.eot?#iefixwsvj4f') format('embedded-opentype'), url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/theme-icons/theme-icons.woff?wsvj4f') format('woff'), url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/theme-icons/theme-icons.ttf?wsvj4f') format('truetype'), url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/theme-icons/theme-icons.svg?wsvj4f#icomoon') format('svg'); font-weight:normal; font-style:normal; } @font-face { font-family:'star'; src:url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/woocommerce/star.eot'); src:url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/woocommerce/star.eot?#iefix') format('embedded-opentype'), url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/woocommerce/star.woff') format('woff'), url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/woocommerce/star.ttf') format('truetype'), url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/woocommerce/star.svg#star') format('svg'); font-weight:normal; font-style:normal; } @font-face { font-family:'WooCommerce'; src:url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/woocommerce/WooCommerce.eot'); src:url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/woocommerce/WooCommerce.eot?#iefix') format('embedded-opentype'), url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/woocommerce/WooCommerce.woff') format('woff'), url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/woocommerce/WooCommerce.ttf') format('truetype'), url('http://brewcouver.com/wp-content/themes/jupiter/assets/stylesheet/icons/woocommerce/WooCommerce.svg#WooCommerce') format('svg'); font-weight:normal; font-style:normal; } #padding-3 { height:250px; } #padding-4 { height:100px; } #fancy-title-5 span i { background:-webkit-linear-gradient(left,#ff7639 0%, #ffffff 100%); background:linear-gradient(to right,#ff7639 0%, #ffffff 100%); } #fancy-title-5 span i { -webkit-background-clip:text; -webkit-text-fill-color:transparent; display:inline-block; } .Firefox #fancy-title-5 span i, .Edge #fancy-title-5 span i, .IE #fancy-title-5 span i { background:transparent; color:#ffffff; } #fancy-title-5{letter-spacing:0px;text-transform:capitalize;font-size:24px;text-align:center;font-style:inherit;font-weight:inherit;padding-top:0px;padding-bottom:0px;}#fancy-title-5 span{} #fancy-title-6 span i { background:-webkit-linear-gradient(left,#ff7639 0%, #ffffff 100%); background:linear-gradient(to right,#ff7639 0%, #ffffff 100%); } #fancy-title-6 span i { -webkit-background-clip:text; -webkit-text-fill-color:transparent; display:inline-block; } .Firefox #fancy-title-6 span i, .Edge #fancy-title-6 span i, .IE #fancy-title-6 span i { background:transparent; color:#ffffff; } #fancy-title-6{letter-spacing:0px;text-transform:uppercase;font-size:72px;text-align:center;font-style:inherit;font-weight:bolder;padding-top:0px;padding-bottom:0px;}#fancy-title-6 span{} @media handheld, only screen and (max-width:767px) { #fancy-title-6 { font-size:50px; } } #mk-shape-divider-7 .shape__container { background-color:; } #mk-shape-divider-7 .shape__container .shape { overflow:hidden; height:130; } #mk-shape-divider-7 .shape__container .shape svg { position:relative; top:0.4px; } .full-width-2 { min-height:0px; margin-bottom:0px; } .full-width-2 .mk-half-layout { background-image:url(http://brewcouver.com/wp-content/uploads/2016/01/luckylager.jpg); } .full-width-2 .page-section-content { padding:0px 0 300px; } #background-layer--2 { background-image:url(http://brewcouver.com/wp-content/uploads/2016/01/luckylager.jpg); background-position:center bottom; background-repeat:no-repeat; ; ; } .full-width-2 .mk-skip-to-next { bottom:100px; } #padding-8 { height:140px; } #flipbox-9 .mk-flipbox-front { background-color:#ffffff;} #flipbox-9 .front-icon i { font-size:16px;} #flipbox-9 .front-title { font-weight:inherit;font-size:0px; } #flipbox-9 .front-desc { font-size:20px; } #flipbox-9 .mk-flipbox-back { background-color:#ff7639;} #flipbox-9 .back-title { font-weight:inherit; font-size:30px; color:#000000;} #flipbox-9 .back-desc { font-size:20px; color:#ffffff;} #mk-button-10 { margin-bottom:15px; margin-top:20px; margin-right:15px; } #mk-button-10 .mk-button { display:inline-block; max-width:100%; } #mk-button-10 .mk-button { background-color:#24232a; } #mk-button-10 .mk-button:hover { } #padding-11 { height:30px; } #flipbox-12 .mk-flipbox-front { background-color:#ffffff;} #flipbox-12 .front-icon i { font-size:16px;} #flipbox-12 .front-title { font-weight:inherit;font-size:0px; } #flipbox-12 .front-desc { font-size:20px; } #flipbox-12 .mk-flipbox-back { background-color:#ff7639;} #flipbox-12 .back-title { font-weight:inherit; font-size:30px; color:#000000;} #flipbox-12 .back-desc { font-size:20px; color:#ffffff;} #mk-button-13 { margin-bottom:15px; margin-top:20px; margin-right:15px; } #mk-button-13 .mk-button { display:inline-block; max-width:100%; } #mk-button-13 .mk-button { background-color:#24232a; } #mk-button-13 .mk-button:hover { } #padding-14 { height:30px; } #flipbox-15 .mk-flipbox-front { background-color:#ffffff;} #flipbox-15 .front-icon i { font-size:16px;} #flipbox-15 .front-title { font-weight:inherit;font-size:20px; } #flipbox-15 .front-desc { font-size:20px; } #flipbox-15 .mk-flipbox-back { background-color:#ff7639;} #flipbox-15 .back-title { font-weight:inherit; font-size:30px; color:#000000;} #flipbox-15 .back-desc { font-size:20px; color:#ffffff;} #mk-button-16 { margin-bottom:15px; margin-top:20px; margin-right:15px; } #mk-button-16 .mk-button { display:inline-block; max-width:100%; } #mk-button-16 .mk-button { background-color:#24232a; } #mk-button-16 .mk-button:hover { } #padding-17 { height:30px; } #flipbox-18 .mk-flipbox-front { background-color:#ffffff;} #flipbox-18 .front-icon i { font-size:16px;} #flipbox-18 .front-title { font-weight:inherit;font-size:20px; } #flipbox-18 .front-desc { font-size:20px; } #flipbox-18 .mk-flipbox-back { background-color:#ff7639;} #flipbox-18 .back-title { font-weight:inherit; font-size:30px; color:#000000;} #flipbox-18 .back-desc { font-size:18px; color:#ffffff;} #mk-button-19 { margin-bottom:15px; margin-top:20px; margin-right:15px; } #mk-button-19 .mk-button { display:inline-block; max-width:100%; } #mk-button-19 .mk-button { background-color:#24232a; } #mk-button-19 .mk-button:hover { } #padding-20 { height:30px; } #flipbox-21 .mk-flipbox-front { background-color:#ffffff;} #flipbox-21 .front-icon i { font-size:16px;} #flipbox-21 .front-title { font-weight:inherit;font-size:20px; } #flipbox-21 .front-desc { font-size:20px; } #flipbox-21 .mk-flipbox-back { background-color:#ff7639;} #flipbox-21 .back-title { font-weight:inherit; font-size:30px; color:#000000;} #flipbox-21 .back-desc { font-size:18px; color:#ffffff;} #mk-button-22 { margin-bottom:15px; margin-top:20px; margin-right:15px; } #mk-button-22 .mk-button { display:inline-block; max-width:100%; } #mk-button-22 .mk-button { background-color:#24232a; } #mk-button-22 .mk-button:hover { } #padding-23 { height:30px; } #flipbox-24 .mk-flipbox-front { background-color:#ffffff;} #flipbox-24 .front-icon i { font-size:16px;} #flipbox-24 .front-title { font-weight:inherit;font-size:20px; } #flipbox-24 .front-desc { font-size:20px; } #flipbox-24 .mk-flipbox-back { background-color:#ff7639;} #flipbox-24 .back-title { font-weight:inherit; font-size:30px; color:#000000;} #flipbox-24 .back-desc { font-size:20px; color:#ffffff;} #mk-button-25 { margin-bottom:15px; margin-top:20px; margin-right:15px; } #mk-button-25 .mk-button { display:inline-block; max-width:100%; } #mk-button-25 .mk-button { background-color:#24232a; } #mk-button-25 .mk-button:hover { } #padding-26 { height:30px; } #flipbox-27 .mk-flipbox-front { background-color:#ffffff;} #flipbox-27 .front-icon i { font-size:16px;} #flipbox-27 .front-title { font-weight:inherit;font-size:20px; } #flipbox-27 .front-desc { font-size:20px; } #flipbox-27 .mk-flipbox-back { background-color:#ff7639;} #flipbox-27 .back-title { font-weight:inherit; font-size:30px; color:#000000;} #flipbox-27 .back-desc { font-size:20px; color:#ffffff;} #mk-button-28 { margin-bottom:15px; margin-top:20px; margin-right:15px; } #mk-button-28 .mk-button { display:inline-block; max-width:100%; } #mk-button-28 .mk-button { background-color:#24232a; } #mk-button-28 .mk-button:hover { } #padding-29 { height:30px; } #flipbox-30 .mk-flipbox-front { background-color:#ffffff;} #flipbox-30 .front-icon i { font-size:16px;} #flipbox-30 .front-title { font-weight:inherit;font-size:20px; } #flipbox-30 .front-desc { font-size:20px; } #flipbox-30 .mk-flipbox-back { background-color:#ff7639;} #flipbox-30 .back-title { font-weight:inherit; font-size:30px; color:#000000;} #flipbox-30 .back-desc { font-size:18px; color:#ffffff;} #mk-button-31 { margin-bottom:15px; margin-top:20px; margin-right:15px; } #mk-button-31 .mk-button { display:inline-block; max-width:100%; } #mk-button-31 .mk-button { background-color:#24232a; } #mk-button-31 .mk-button:hover { } #padding-32 { height:30px; } #flipbox-33 .mk-flipbox-front { background-color:#ffffff;} #flipbox-33 .front-icon i { font-size:16px;} #flipbox-33 .front-title { font-weight:inherit;font-size:20px; } #flipbox-33 .front-desc { font-size:20px; } #flipbox-33 .mk-flipbox-back { background-color:#ff7639;} #flipbox-33 .back-title { font-weight:inherit; font-size:30px; color:#000000;} #flipbox-33 .back-desc { font-size:20px; color:#ffffff;} #mk-button-34 { margin-bottom:15px; margin-top:20px; margin-right:15px; } #mk-button-34 .mk-button { display:inline-block; max-width:100%; } #mk-button-34 .mk-button { background-color:#24232a; } #mk-button-34 .mk-button:hover { } #padding-35 { height:30px; } .mk-blog-thumbnail-item.content-align-right .item-wrapper { background-color:#24232a!important; } .mk-blog-thumbnail-item { background-color:#24232a!important; } .mk-pagination .mk-pagination-next, .mk-pagination .mk-pagination-previous { color:#fff200!important; border:1px solid #fff200!important; } .mk-pagination .page-number { color:#fff200!important; } .mk-button--dimension-outline.skin-dark, .mk-button--dimension-savvy.skin-dark { border-color:#fff200!important; color:#fff200!important; } .mk-single-price .amount { color:#fff200!important; } .mk-product.style-default .title { font-size:48px!important; }
+</style>
+<link rel='stylesheet' id='js_composer_front-css'  href='http://brewcouver.com/wp-content/plugins/js_composer_theme/assets/css/js_composer.min.css?ver=4.11.3' type='text/css' media='all' />
+<link rel='stylesheet' id='global-assets-css-css'  href='http://brewcouver.com/wp-content/uploads/mk_assets/components-production.min.css?ver=1466879850' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-options-css'  href='http://brewcouver.com/wp-content/uploads/mk_assets/theme-options-production.css?ver=1466879850' type='text/css' media='all' />
+<script type='text/javascript' src='http://brewcouver.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://brewcouver.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://brewcouver.com/wp-content/plugins/LayerSlider/static/js/greensock.js?ver=1.11.8'></script>
+<script type='text/javascript' src='http://brewcouver.com/wp-content/plugins/LayerSlider/static/js/layerslider.kreaturamedia.jquery.js?ver=5.6.2'></script>
+<script type='text/javascript' src='http://brewcouver.com/wp-content/plugins/LayerSlider/static/js/layerslider.transitions.js?ver=5.6.2'></script>
+<script type='text/javascript' src='http://brewcouver.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.1.6'></script>
+<script type='text/javascript' src='http://brewcouver.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.1.6'></script>
+<link rel='https://api.w.org/' href='http://brewcouver.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://brewcouver.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://brewcouver.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.5.3" />
+<link rel="canonical" href="http://brewcouver.com/breweries/" />
+<link rel='shortlink' href='http://brewcouver.com/?p=49' />
+<link rel="alternate" type="application/json+oembed" href="http://brewcouver.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fbrewcouver.com%2Fbreweries%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://brewcouver.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fbrewcouver.com%2Fbreweries%2F&#038;format=xml" />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://brewcouver.com/wp-content/plugins/js_composer_theme/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="http://brewcouver.com/wp-content/plugins/js_composer_theme/assets/css/vc-ie8.min.css" media="screen"><![endif]--><meta name="generator" content="Powered by Slider Revolution 5.1.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<meta name="generator" content="jupiter 5.0.12" />
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body class="page page-id-49 page-template-default loading wpb-js-composer js-comp-ver-4.11.3 vc_responsive" itemscope="itemscope" itemtype="https://schema.org/WebPage"  data-adminbar="">
+
+	<div class="mk-body-loader-overlay page-preloader" style="background-color:#000000;"><img alt="Brewcouver" class="preloader-logo" src="http://brewcouver.com/wp-content/uploads/2016/01/brewcouver-badge-white-e1456436343415.png"> <div class="preloader-preview-area">  <div class="cube-transition">
+                            <div style="background-color: #ffffff"></div>
+                            <div style="background-color: #ffffff"></div>
+                        </div>  </div></div>
+	<!-- Target for scroll anchors to achieve native browser bahaviour + possible enhancements like smooth scrolling -->
+	<div id="top-of-page"></div>
+
+		<div id="mk-boxed-layout">
+
+			<div id="mk-theme-container" class="trans-header">
+
+				 
+    <header data-height='100'
+                data-sticky-height='55'
+                data-responsive-height='90'
+                data-transparent-skin='light'
+                data-header-style='1'
+                data-sticky-style='slide'
+                data-sticky-offset='header' id="mk-header-1" class="mk-header header-style-1 header-align-center js-logo-middle logo-in-middle toolbar-false menu-hover-5 sticky-style-slide mk-background-stretch boxed-header mobile-align-right  transparent-header light-skin bg-false" role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader" >
+                    <div class="mk-header-holder">
+                                <div class="mk-header-inner add-header-height">
+
+                    <div class="mk-header-bg "></div>
+
+                    
+                                                <div class="mk-grid header-grid">
+                    
+                            <div class="mk-header-nav-container one-row-style menu-hover-style-5" role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" >
+                                <nav class="mk-main-navigation js-main-nav"><ul id="menu-main-menu" class="main-navigation-ul"><li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu"><a class="menu-item-link js-smooth-scroll"  href="http://brewcouver.com/">Home</a></li>
+<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu"><a class="menu-item-link js-smooth-scroll"  href="http://brewcouver.com/about/">About</a></li>
+<li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-49 current_page_item no-mega-menu"><a class="menu-item-link js-smooth-scroll"  href="http://brewcouver.com/breweries/">Breweries</a></li>
+        <li class=" nav-middle-logo menu-item fit-logo-img add-header-height  ">
+
+	    <a href="http://brewcouver.com" title="Brewcouver">
+	    
+			             <img class="mk-desktop-logo dark-logo" title="The Passport to Vancouver&#039;s Breweries." alt="The Passport to Vancouver&#039;s Breweries." src="http://brewcouver.com/wp-content/uploads/2016/01/brewcouver-hop-white-1.png" />
+			    
+			    			             <img class="mk-desktop-logo light-logo" title="The Passport to Vancouver&#039;s Breweries." alt="The Passport to Vancouver&#039;s Breweries." src="http://brewcouver.com/wp-content/uploads/2016/01/brewcouver-hop-white-1.png" />
+			    			    
+			    			    
+			    	    </a>
+    </li>
+<li id="menu-item-8230" class="menu-item menu-item-type-post_type menu-item-object-page has-mega-menu"><a class="menu-item-link js-smooth-scroll"  href="http://brewcouver.com/map/">Map</a></li>
+<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu"><a class="menu-item-link js-smooth-scroll"  href="http://brewcouver.com/brewnews/">Brew News</a></li>
+<li id="menu-item-8090" class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu"><a class="menu-item-link js-smooth-scroll"  href="http://brewcouver.com/contact-us/">Contact</a></li>
+</ul></nav>                            </div>
+                            
+<div class="mk-nav-responsive-link">
+    <div class="mk-css-icon-menu">
+        <div class="mk-css-icon-menu-line-1"></div>
+        <div class="mk-css-icon-menu-line-2"></div>
+        <div class="mk-css-icon-menu-line-3"></div>
+    </div>
+</div>        <div class=" header-logo fit-logo-img add-header-height  ">
+
+	    <a href="http://brewcouver.com" title="Brewcouver">
+	    
+			             <img class="mk-desktop-logo dark-logo" title="The Passport to Vancouver&#039;s Breweries." alt="The Passport to Vancouver&#039;s Breweries." src="http://brewcouver.com/wp-content/uploads/2016/01/brewcouver-hop-white-1.png" />
+			    
+			    			             <img class="mk-desktop-logo light-logo" title="The Passport to Vancouver&#039;s Breweries." alt="The Passport to Vancouver&#039;s Breweries." src="http://brewcouver.com/wp-content/uploads/2016/01/brewcouver-hop-white-1.png" />
+			    			    
+			    			    
+			    	    </a>
+    </div>
+
+                                            </div>
+                    
+                    <div class="mk-header-right">
+                        <div class="mk-header-social header-section"><ul><li><a class="facebook-hover " target="_blank" href="https://www.facebook.com/brewcouver"><i class="mk-jupiter-icon-facebook" alt="facebook" title="facebook"></i></a></li><li><a class="twitter-hover " target="_blank" href="https://twitter.com/brewcouver"><i class="mk-jupiter-icon-twitter" alt="twitter" title="twitter"></i></a></li><li><a class="instagram-hover " target="_blank" href="https://twitter.com/brewcouver"><i class="mk-jupiter-icon-instagram" alt="instagram" title="instagram"></i></a></li></ul><div class="clearboth"></div></div>                    </div>
+
+                </div>
+                
+<div class="mk-responsive-wrap">
+
+	<nav class="menu-main-menu-container"><ul id="menu-main-menu-1" class="mk-responsive-nav"><li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll"  href="http://brewcouver.com/">Home</a></li>
+<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll"  href="http://brewcouver.com/about/">About</a></li>
+<li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-49 current_page_item"><a class="menu-item-link js-smooth-scroll"  href="http://brewcouver.com/breweries/">Breweries</a></li>
+<li id="menu-item-8230" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll"  href="http://brewcouver.com/map/">Map</a></li>
+<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll"  href="http://brewcouver.com/brewnews/">Brew News</a></li>
+<li id="menu-item-8090" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll"  href="http://brewcouver.com/contact-us/">Contact</a></li>
+</ul></nav>
+		
+
+</div>
+        
+            </div>
+        
+                        
+    </header>
+        
+        <div id="theme-page" class="master-holder clear" role="main" itemprop="mainContentOfPage" >
+            <div class="mk-main-wrapper-holder">
+                <div id="mk-page-id-49" class="theme-page-wrapper mk-main-wrapper mk-grid full-layout no-padding ">
+                      <div class="theme-content no-padding" itemprop="mainContentOfPage">
+                            
+
+<div class="clearboth"></div>
+	</div> 		</div> 			</div> 
+
+				
+<div class="mk-page-section-wrapper">
+    <div id="page-section-2" class="mk-page-section self-hosted  full-width-2 js-el js-master-row    center-y"   data-intro-effect="false">
+
+        
+            
+            <div class="mk-page-section-inner">
+                
+
+
+
+<div style="background-color:#000000;opacity:0.6;" class="mk-video-color-mask"></div>
+
+                
+                
+
+
+			<div class="mk-section-preloader js-el" data-mk-component="Preloader">
+			<div class="mk-section-preloader__icon"></div>
+		</div>
+		
+
+	<div class="background-layer-holder">
+		<div id="background-layer--2" class="background-layer mk-background-stretch none-blend-effect js-el " data-mk-component="Parallax" data-parallax-config='{"speed" : 0.3 }' >
+					</div>
+	</div>
+
+            </div>
+            
+            
+        <div class="page-section-content vc_row-fluid page-section-fullwidth">
+            <div class="mk-padding-wrapper">
+<div style="" class="vc_col-sm-12 wpb_column column_container  _ height-full">
+	
+<div id="padding-3" class="mk-padding-divider hidden-tl  clear"></div>
+
+
+<div id="padding-4" class="mk-padding-divider hidden-sm  clear"></div>
+
+
+<h2 id="fancy-title-5" class="mk-fancy-title align-center  mk-animate-element top-to-bottom  simple-style  color-gradient">
+	<span>
+		<i>		the		</i>	</span>
+</h2>
+<div class="clearboth"></div>
+
+
+
+<style>#fancy-title-5 {font-family: "Share Tech Mono"}</style>
+<h2 id="fancy-title-6" class="mk-fancy-title align-center  mk-animate-element top-to-bottom  simple-style  color-gradient">
+	<span>
+		<i>		breweries		</i>	</span>
+</h2>
+<div class="clearboth"></div>
+
+
+
+<style>#fancy-title-6 {font-family: "Share Tech Mono"}</style></div>
+</div>
+            <div class="clearboth"></div>
+        </div>
+
+
+            
+            
+            <div class="mk-shape-divider mk-shape-divider--stick diagonal-bottom-style big-size mk-shape-divider--stick-bottom" id="mk-shape-divider-7">
+			<div class="shape__container">
+				<div class="shape">
+				
+		<svg width="100%" height="130px"><defs><pattern id="shapeDividerPattern-7" preserveaspectratio="none" style="background-repeat: none;" patternunits="userSpaceOnUse" x="0" y="0" width="100%" height="1300px" viewbox="0 0 100 1300"><polygon fill="#000000" points="100,0 100,130 0,130 "></polygon></pattern></defs><!-- Background --><rect x="0" y="0" width="100%" height="130px" fill="url(#shapeDividerPattern-7)"></rect></svg>
+</div>
+			</div>
+		</div>
+        
+        <div class="clearboth"></div>
+    </div>
+</div>
+
+<div class="mk-main-wrapper-holder">
+	<div class="theme-page-wrapper no-padding full-layout mk-grid vc_row-fluid">
+		<div class="theme-content no-padding">
+
+			
+
+
+<div class="wpb_row vc_row  mk-fullwidth-false  attched-false    vc_row-fluid  js-master-row">
+		
+			
+<div style="" class="vc_col-sm-12 wpb_column column_container  _ height-full">
+	
+<div id="padding-8" class="mk-padding-divider   clear"></div>
+
+</div>
+	</div>
+
+
+
+<div class="wpb_row vc_row  mk-fullwidth-false  attched-false    vc_row-fluid  js-master-row">
+		
+			
+<div style="" class="vc_col-sm-4 wpb_column column_container  _ height-full">
+	
+
+<div id="flipbox-9" onclick="" class="mk-flipbox flip-horizontal  _ perspective height-full">
+	<div class="mk-flipbox-holder _ flex flex-items-stretch width-x2 height-full text-center no-pointer" style="min-height: 300px">
+
+		<div class="mk-flipbox-front _ flex flex-items-center a_col-1of2 no-backface origin-center bezier-1">
+			<div class="mk-flipbox-content _ width-full">
+				<div class="front-icon _ padding-20">
+										      <img src="http://brewcouver.com/wp-content/uploads/2016/03/Fortside.png" alt="" />
+									</div>
+
+				<div class="front-title _ padding-20"></div>
+				<div class="front-desc _ padding-x-10-pr"></div>
+			</div>
+		</div>
+
+		<div class="mk-flipbox-back _ flex flex-items-center a_col-1of2 fold-back-horizontal no-backface origin-center bezier-1 pointer">
+			<div class="mk-flipbox-content width-full">
+
+				<div class="back-title _ padding-20">Fortside</div>
+				<div class="back-desc _ padding-x-10-pr">Named after Fort Vancouver, Fortside brewing brews beer worth being passionate about. From the taste to the smell to the overall experience, Fortside brewing is committed to making SW Washington #BEERSTRONG.</div>
+
+				
+<div id="mk-button-10" class="mk-button-container _ relative    block text-center  back-button _ no-backface">
+	<a  href="http://www.fortsidebrewing.com/"  target="_self" class="mk-button js-smooth-scroll mk-button--dimension-flat mk-button--size-small mk-button--corner-pointed text-color-light _ relative text-center font-weight-700 no-backface  letter-spacing-1 inline">
+				 
+		<span class="mk-button--text">FortsideBrewing.com</span>
+			</a>
+</div>			</div>
+		</div>
+	</div>
+</div>
+
+<div id="padding-11" class="mk-padding-divider   clear"></div>
+
+</div>
+
+<div style="" class="vc_col-sm-4 wpb_column column_container  _ height-full">
+	
+
+<div id="flipbox-12" onclick="" class="mk-flipbox flip-horizontal  _ perspective height-full">
+	<div class="mk-flipbox-holder _ flex flex-items-stretch width-x2 height-full text-center no-pointer" style="min-height: 300px">
+
+		<div class="mk-flipbox-front _ flex flex-items-center a_col-1of2 no-backface origin-center bezier-1">
+			<div class="mk-flipbox-content _ width-full">
+				<div class="front-icon _ padding-20">
+										      <img src="http://brewcouver.com/wp-content/uploads/2016/01/GhostRunners.png" alt="" />
+									</div>
+
+				<div class="front-title _ padding-20"></div>
+				<div class="front-desc _ padding-x-10-pr"></div>
+			</div>
+		</div>
+
+		<div class="mk-flipbox-back _ flex flex-items-center a_col-1of2 fold-back-horizontal no-backface origin-center bezier-1 pointer">
+			<div class="mk-flipbox-content width-full">
+
+				<div class="back-title _ padding-20">Ghost Runners</div>
+				<div class="back-desc _ padding-x-10-pr">Running is the theme that graces every beer name and several events held by Ghost Runners. A unique and fun experience if you love running, but even more so if you love beer! </div>
+
+				
+<div id="mk-button-13" class="mk-button-container _ relative    block text-center  back-button _ no-backface">
+	<a  href="http://www.ghostrunnersbrewery.com/"  target="_self" class="mk-button js-smooth-scroll mk-button--dimension-flat mk-button--size-small mk-button--corner-pointed text-color-light _ relative text-center font-weight-700 no-backface  letter-spacing-1 inline">
+				 
+		<span class="mk-button--text">GhostRunnersBrewery.com</span>
+			</a>
+</div>			</div>
+		</div>
+	</div>
+</div>
+
+<div id="padding-14" class="mk-padding-divider   clear"></div>
+
+</div>
+
+<div style="" class="vc_col-sm-4 wpb_column column_container  _ height-full">
+	
+
+<div id="flipbox-15" onclick="" class="mk-flipbox flip-horizontal  _ perspective height-full">
+	<div class="mk-flipbox-holder _ flex flex-items-stretch width-x2 height-full text-center no-pointer" style="min-height: 300px">
+
+		<div class="mk-flipbox-front _ flex flex-items-center a_col-1of2 no-backface origin-center bezier-1">
+			<div class="mk-flipbox-content _ width-full">
+				<div class="front-icon _ padding-20">
+										      <img src="http://brewcouver.com/wp-content/uploads/2016/03/Heathen.png" alt="" />
+									</div>
+
+				<div class="front-title _ padding-20"></div>
+				<div class="front-desc _ padding-x-10-pr"></div>
+			</div>
+		</div>
+
+		<div class="mk-flipbox-back _ flex flex-items-center a_col-1of2 fold-back-horizontal no-backface origin-center bezier-1 pointer">
+			<div class="mk-flipbox-content width-full">
+
+				<div class="back-title _ padding-20">Heathen</div>
+				<div class="back-desc _ padding-x-10-pr">Commitment to local ingredient sourcing and forward thinking are the values that drive Heathen’s mantra, “Progressive ales for the promiscuous palette”.</div>
+
+				
+<div id="mk-button-16" class="mk-button-container _ relative    block text-center  back-button _ no-backface">
+	<a  href="http://heathenbrewing.com/"  target="_self" class="mk-button js-smooth-scroll mk-button--dimension-flat mk-button--size-small mk-button--corner-pointed text-color-light _ relative text-center font-weight-700 no-backface  letter-spacing-1 inline">
+				 
+		<span class="mk-button--text">HeathenBrewing.com</span>
+			</a>
+</div>			</div>
+		</div>
+	</div>
+</div>
+
+<div id="padding-17" class="mk-padding-divider   clear"></div>
+
+</div>
+	</div>
+
+
+
+<div class="wpb_row vc_row  mk-fullwidth-false  attched-false    vc_row-fluid  js-master-row">
+		
+			
+<div style="" class="vc_col-sm-4 wpb_column column_container  _ height-full">
+	
+
+<div id="flipbox-18" onclick="" class="mk-flipbox flip-horizontal  _ perspective height-full">
+	<div class="mk-flipbox-holder _ flex flex-items-stretch width-x2 height-full text-center no-pointer" style="min-height: 300px">
+
+		<div class="mk-flipbox-front _ flex flex-items-center a_col-1of2 no-backface origin-center bezier-1">
+			<div class="mk-flipbox-content _ width-full">
+				<div class="front-icon _ padding-20">
+										      <img src="http://brewcouver.com/wp-content/uploads/2016/03/Loowit.png" alt="" />
+									</div>
+
+				<div class="front-title _ padding-20"></div>
+				<div class="front-desc _ padding-x-10-pr"></div>
+			</div>
+		</div>
+
+		<div class="mk-flipbox-back _ flex flex-items-center a_col-1of2 fold-back-horizontal no-backface origin-center bezier-1 pointer">
+			<div class="mk-flipbox-content width-full">
+
+				<div class="back-title _ padding-20">Loowit</div>
+				<div class="back-desc _ padding-x-10-pr">With roots in Vancouver as deep as the mountain they're named for, Loowit strives to bring you an lava flow of incredible beer. Founded in 2012, Loowit is already a Couve classic. </div>
+
+				
+<div id="mk-button-19" class="mk-button-container _ relative    block text-center  back-button _ no-backface">
+	<a  href="http://www.loowitbrewing.com/"  target="_self" class="mk-button js-smooth-scroll mk-button--dimension-flat mk-button--size-small mk-button--corner-pointed text-color-light _ relative text-center font-weight-700 no-backface  letter-spacing-1 inline">
+				 
+		<span class="mk-button--text">LoowitBrewing.com</span>
+			</a>
+</div>			</div>
+		</div>
+	</div>
+</div>
+
+<div id="padding-20" class="mk-padding-divider   clear"></div>
+
+</div>
+
+<div style="" class="vc_col-sm-4 wpb_column column_container  _ height-full">
+	
+
+<div id="flipbox-21" onclick="" class="mk-flipbox flip-horizontal  _ perspective height-full">
+	<div class="mk-flipbox-holder _ flex flex-items-stretch width-x2 height-full text-center no-pointer" style="min-height: 100px">
+
+		<div class="mk-flipbox-front _ flex flex-items-center a_col-1of2 no-backface origin-center bezier-1">
+			<div class="mk-flipbox-content _ width-full">
+				<div class="front-icon _ padding-20">
+										      <img src="http://brewcouver.com/wp-content/uploads/2016/01/Mt-Tabor.png" alt="" />
+									</div>
+
+				<div class="front-title _ padding-20"></div>
+				<div class="front-desc _ padding-x-10-pr"></div>
+			</div>
+		</div>
+
+		<div class="mk-flipbox-back _ flex flex-items-center a_col-1of2 fold-back-horizontal no-backface origin-center bezier-1 pointer">
+			<div class="mk-flipbox-content width-full">
+
+				<div class="back-title _ padding-20">Mt. Tabor</div>
+				<div class="back-desc _ padding-x-10-pr">With brewing roots on Mt. Tabor in Portland, MTBC came to Vancouver in 2011. Brewed locally to be enjoyed locally by lauded award-winning head brewer, Ben Dobler.</div>
+
+				
+<div id="mk-button-22" class="mk-button-container _ relative    block text-center  back-button _ no-backface">
+	<a  href="http://www.mttaborbrewing.com/"  target="_self" class="mk-button js-smooth-scroll mk-button--dimension-flat mk-button--size-small mk-button--corner-pointed text-color-light _ relative text-center font-weight-700 no-backface  letter-spacing-1 inline">
+				 
+		<span class="mk-button--text">MtTaborBrewing.com</span>
+			</a>
+</div>			</div>
+		</div>
+	</div>
+</div>
+
+<div id="padding-23" class="mk-padding-divider   clear"></div>
+
+</div>
+
+<div style="" class="vc_col-sm-4 wpb_column column_container  _ height-full">
+	
+
+<div id="flipbox-24" onclick="" class="mk-flipbox flip-horizontal  _ perspective height-full">
+	<div class="mk-flipbox-holder _ flex flex-items-stretch width-x2 height-full text-center no-pointer" style="min-height: 300px">
+
+		<div class="mk-flipbox-front _ flex flex-items-center a_col-1of2 no-backface origin-center bezier-1">
+			<div class="mk-flipbox-content _ width-full">
+				<div class="front-icon _ padding-20">
+										      <img src="http://brewcouver.com/wp-content/uploads/2016/03/Old-Ivy.png" alt="" />
+									</div>
+
+				<div class="front-title _ padding-20"></div>
+				<div class="front-desc _ padding-x-10-pr"></div>
+			</div>
+		</div>
+
+		<div class="mk-flipbox-back _ flex flex-items-center a_col-1of2 fold-back-horizontal no-backface origin-center bezier-1 pointer">
+			<div class="mk-flipbox-content width-full">
+
+				<div class="back-title _ padding-20">Old Ivy</div>
+				<div class="back-desc _ padding-x-10-pr">Named after the 100+ year old Ivy in their beautiful open patio, Old Ivy has a tasteful ambiance and the beer to match. Head Brewer Chris Spollen is masterful in every way.</div>
+
+				
+<div id="mk-button-25" class="mk-button-container _ relative    block text-center  back-button _ no-backface">
+	<a  href="http://www.oldivybrewery.com/"  target="_self" class="mk-button js-smooth-scroll mk-button--dimension-flat mk-button--size-small mk-button--corner-pointed text-color-light _ relative text-center font-weight-700 no-backface  letter-spacing-1 inline">
+				 
+		<span class="mk-button--text">OldIvyBrewery.com</span>
+			</a>
+</div>			</div>
+		</div>
+	</div>
+</div>
+
+<div id="padding-26" class="mk-padding-divider   clear"></div>
+
+</div>
+	</div>
+
+
+
+<div class="wpb_row vc_row  mk-fullwidth-false  attched-false    vc_row-fluid  js-master-row">
+		
+			
+<div style="" class="vc_col-sm-4 wpb_column column_container  _ height-full">
+	
+
+<div id="flipbox-27" onclick="" class="mk-flipbox flip-horizontal  _ perspective height-full">
+	<div class="mk-flipbox-holder _ flex flex-items-stretch width-x2 height-full text-center no-pointer" style="min-height: 300px">
+
+		<div class="mk-flipbox-front _ flex flex-items-center a_col-1of2 no-backface origin-center bezier-1">
+			<div class="mk-flipbox-content _ width-full">
+				<div class="front-icon _ padding-20">
+										      <img src="http://brewcouver.com/wp-content/uploads/2016/01/Rail-Side.png" alt="" />
+									</div>
+
+				<div class="front-title _ padding-20"></div>
+				<div class="front-desc _ padding-x-10-pr"></div>
+			</div>
+		</div>
+
+		<div class="mk-flipbox-back _ flex flex-items-center a_col-1of2 fold-back-horizontal no-backface origin-center bezier-1 pointer">
+			<div class="mk-flipbox-content width-full">
+
+				<div class="back-title _ padding-20">Railside</div>
+				<div class="back-desc _ padding-x-10-pr">Pure ingredients and a pure product are what drive the beer production at Railside. It’s about passion and enjoyment here, not a job.</div>
+
+				
+<div id="mk-button-28" class="mk-button-container _ relative    block text-center  back-button _ no-backface">
+	<a  href="http://www.railsidebrewing.com/"  target="_self" class="mk-button js-smooth-scroll mk-button--dimension-flat mk-button--size-small mk-button--corner-pointed text-color-light _ relative text-center font-weight-700 no-backface  letter-spacing-1 inline">
+				 
+		<span class="mk-button--text">RailsideBrewing.com</span>
+			</a>
+</div>			</div>
+		</div>
+	</div>
+</div>
+
+<div id="padding-29" class="mk-padding-divider   clear"></div>
+
+</div>
+
+<div style="" class="vc_col-sm-4 wpb_column column_container  _ height-full">
+	
+
+<div id="flipbox-30" onclick="" class="mk-flipbox flip-horizontal  _ perspective height-full">
+	<div class="mk-flipbox-holder _ flex flex-items-stretch width-x2 height-full text-center no-pointer" style="min-height: 300px">
+
+		<div class="mk-flipbox-front _ flex flex-items-center a_col-1of2 no-backface origin-center bezier-1">
+			<div class="mk-flipbox-content _ width-full">
+				<div class="front-icon _ padding-20">
+										      <img src="http://brewcouver.com/wp-content/uploads/2016/03/Trap-Door.png" alt="" />
+									</div>
+
+				<div class="front-title _ padding-20"></div>
+				<div class="front-desc _ padding-x-10-pr"></div>
+			</div>
+		</div>
+
+		<div class="mk-flipbox-back _ flex flex-items-center a_col-1of2 fold-back-horizontal no-backface origin-center bezier-1 pointer">
+			<div class="mk-flipbox-content width-full">
+
+				<div class="back-title _ padding-20">Trap Door</div>
+				<div class="back-desc _ padding-x-10-pr">A fourth generation Vancouver beer industry family with the goal of producing the highest quality craft beer with sustainability &amp; community in mind. Visit the large taproom and patio for a family-friendly experience while sipping on balanced Northwest-style craft brews.</div>
+
+				
+<div id="mk-button-31" class="mk-button-container _ relative    block text-center  back-button _ no-backface">
+	<a  href="http://trapdoorbrewing.com/"  target="_self" class="mk-button js-smooth-scroll mk-button--dimension-flat mk-button--size-small mk-button--corner-pointed text-color-light _ relative text-center font-weight-700 no-backface  letter-spacing-1 inline">
+				 
+		<span class="mk-button--text">TrapDoorBrewing.com</span>
+			</a>
+</div>			</div>
+		</div>
+	</div>
+</div>
+
+<div id="padding-32" class="mk-padding-divider   clear"></div>
+
+</div>
+
+<div style="" class="vc_col-sm-4 wpb_column column_container  _ height-full">
+	
+
+<div id="flipbox-33" onclick="" class="mk-flipbox flip-horizontal  _ perspective height-full">
+	<div class="mk-flipbox-holder _ flex flex-items-stretch width-x2 height-full text-center no-pointer" style="min-height: 300px">
+
+		<div class="mk-flipbox-front _ flex flex-items-center a_col-1of2 no-backface origin-center bezier-1">
+			<div class="mk-flipbox-content _ width-full">
+				<div class="front-icon _ padding-20">
+										      <img src="http://brewcouver.com/wp-content/uploads/2016/03/Trusty.png" alt="" />
+									</div>
+
+				<div class="front-title _ padding-20"></div>
+				<div class="front-desc _ padding-x-10-pr"></div>
+			</div>
+		</div>
+
+		<div class="mk-flipbox-back _ flex flex-items-center a_col-1of2 fold-back-horizontal no-backface origin-center bezier-1 pointer">
+			<div class="mk-flipbox-content width-full">
+
+				<div class="back-title _ padding-20">Trusty</div>
+				<div class="back-desc _ padding-x-10-pr">The new kid on the block is making some beautiful beer! Trusty opened in January 2016. Trust your taste buds to Trusty Brewing.</div>
+
+				
+<div id="mk-button-34" class="mk-button-container _ relative    block text-center  back-button _ no-backface">
+	<a  href="http://www.trustybrewing.com/"  target="_self" class="mk-button js-smooth-scroll mk-button--dimension-flat mk-button--size-small mk-button--corner-pointed text-color-light _ relative text-center font-weight-700 no-backface  letter-spacing-1 inline">
+				 
+		<span class="mk-button--text">TrustyBrewing.com</span>
+			</a>
+</div>			</div>
+		</div>
+	</div>
+</div>
+
+<div id="padding-35" class="mk-padding-divider   clear"></div>
+
+</div>
+	</div>
+
+
+		<div class="clearboth"></div>
+		                      
+                      <div class="clearboth"></div>
+                                            </div>
+                                <div class="clearboth"></div>
+                
+                </div>
+            </div>
+
+
+                
+        </div>          
+
+<section id="mk-footer-unfold-spacer"></section>
+
+<section id="mk-footer" class=" mk-footer-disable" role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter" >
+        </section>
+</div>
+</div>
+
+<div class="bottom-corner-btns js-bottom-corner-btns">
+	<div class="mk-quick-contact-wrapper  js-bottom-corner-btn js-bottom-corner-btn--contact">
+			
+		<a href="#" class="mk-quick-contact-link"><i class="mk-icon-envelope"></i></a>
+		<div id="mk-quick-contact">
+			<div class="mk-quick-contact-title">Contact Us</div>
+			<p>We're not around right now. But you can send us an email and we'll get back to you, asap.</p>
+			<form class="mk-contact-form" method="post" novalidate="novalidate">
+				<input type="text" placeholder="Name*" required="required" id="contact_name" name="contact_name" class="text-input" value="" tabindex="773" />
+				<input type="email" required="required" placeholder="Email*" id="contact_email" name="contact_email" class="text-input" value="" tabindex="774"  />
+				<textarea placeholder="Message*" required="required" id="contact_content" name="contact_content" class="textarea" tabindex="775"></textarea>
+				
+				<div class="btn-cont">
+                    <button tabindex="776" class="mk-progress-button mk-contact-button shop-flat-btn shop-skin-btn" data-style="move-up">
+                        <span class="mk-progress-button-content">Send</span>
+                        <span class="mk-progress">
+                            <span class="mk-progress-inner"></span>
+                        </span>
+                        <span class="state-success"><i class="mk-moon-checkmark"></i></span>
+                        <span class="state-error"><i class="mk-moon-close"></i></span>
+                    </button>
+                </div>
+				<input type="hidden" id="security" name="security" value="8b23d233a3" /><input type="hidden" name="_wp_http_referer" value="/breweries/" />				<input type="hidden" id="sh_id" name="sh_id" value="15"><input type="hidden" id="p_id" name="p_id" value="2342">			</form>
+			<div class="bottom-arrow"></div>
+		</div>
+	</div></div>
+
+
+
+
+<footer id="mk_page_footer">
+<script type="text/javascript">
+    php = {
+        hasAdminbar: false,
+        json: (null != null) ? null : "",
+        jsPath: 'http://brewcouver.com/wp-content/themes/jupiter/assets/js'
+      };
+    </script><link rel='stylesheet' id='Share+Tech+Mono-css'  href='//fonts.googleapis.com/css?family=Share+Tech+Mono%3A100italic%2C200italic%2C300italic%2C400italic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%2C100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=4.5.3' type='text/css' media='all' />
+<script type='text/javascript' src='http://brewcouver.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://brewcouver.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://brewcouver.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://brewcouver.com/wp-includes/js/jquery/ui/resizable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://brewcouver.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://brewcouver.com/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://brewcouver.com/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://brewcouver.com/wp-includes/js/jquery/ui/dialog.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://brewcouver.com/wp-includes/js/wpdialog.min.js?ver=4.5.3'></script>
+<script type='text/javascript' src='http://brewcouver.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/brewcouver.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"Please verify that you are not a robot.","sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://brewcouver.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.4.1'></script>
+<script type='text/javascript' src='http://brewcouver.com/wp-content/themes/jupiter/assets/js/plugins/wp-enqueue/smoothscroll.js?ver=5.0.12'></script>
+<script type='text/javascript' src='http://brewcouver.com/wp-includes/js/comment-reply.min.js?ver=4.5.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ajax_login_object = {"ajaxurl":"http:\/\/brewcouver.com\/wp-admin\/admin-ajax.php","redirecturl":"http:\/\/brewcouver.com\/breweries\/","loadingmessage":"Sending user info, please wait..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://brewcouver.com/wp-content/themes/jupiter/assets/js/scripts.js?ver=5.0.12'></script>
+<script type='text/javascript' src='http://brewcouver.com/wp-includes/js/wp-embed.min.js?ver=4.5.3'></script>
+<script type='text/javascript' src='http://brewcouver.com/wp-content/plugins/js_composer_theme/assets/js/dist/js_composer_front.min.js?ver=4.11.3'></script>
+<script type='text/javascript' src='http://brewcouver.com/wp-content/uploads/mk_assets/components-production.min.js?ver=1466879850'></script>
+		<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-75696702-1', 'auto');
+		ga('send', 'pageview');
+		</script> 
+				<script type="text/javascript">
+				</script>
+	<script type="text/javascript">	window.get = {};	window.get.captcha = function(enteredCaptcha) {
+                  return jQuery.get( mk_theme_dir + "/captcha/captcha-check.php", { captcha: enteredCaptcha });
+              	};</script><script>
+    // Run this very early after DOM is ready
+    (function ($) {
+        // Prevent browser native behaviour of jumping to anchor
+        // while preserving support for current links (shared across net or internally on page)
+        var loc = window.location,
+            hash = loc.hash;
+
+        // Detect hashlink and change it's name with !loading appendix
+        if(hash.length && hash.substring(1).length) {
+            var $topLevelSections = $('#theme-page > .vc_row, #theme-page > .mk-main-wrapper-holder, #theme-page > .mk-page-section');
+            var $section = $topLevelSections.filter( '#' + hash.substring(1) );
+            // We smooth scroll only to page section and rows where we define our anchors.
+            // This should prevent conflict with third party plugins relying on hash
+            if( ! $section.length )  return;
+            // Mutate hash for some good reason - crazy jumps of browser. We want really smooth scroll on load
+            // Discard loading state if it already exists in url (multiple refresh)
+            hash = hash.replace( '!loading', '' );
+            var newUrl = hash + '!loading';
+            loc.hash = newUrl;
+        }
+    }(jQuery));
+</script>
+</footer>
+
+</body>
+</html>

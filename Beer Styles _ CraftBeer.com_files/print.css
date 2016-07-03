@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Print Styles*/
+.print, .print-only{display: block;}
+.screen, .screen-only{display: none;}
+
+*, body, html, #wrapper, #main, #content {
+	background:none !important;
+	color: #000 !important;
+}
+
+#content p, #content td, figure, caption{font-size: 12px;}
+
+nav, aside, #searchform, #social-links, #login-form{display: none;}
+
+header, footer, aside, .breadcrumbs, .yarpp-related, #comments{display: none;}
+
+#container {
+	float: none !important;
+	clear: both !important;
+	display: block !important;
+	position: relative !important;
+	width: 800px;
+	margin: 0px auto;
+	box-shadow: none;
+}
+
+.page #main, .post #main, .single #main, section#primary {padding: 0px; margin: 0px; position: relative; float: none; width: 100%; min-height: 0px;}
+
+#content table{width: 600px; margin: 0px 0px 10px 0px; color: #000;}
+#content table a{color: #000;}
+
+a[href]:after{content: none;}
+
+form, form fieldset{background: none; border-radius: 0px; border: none;}
+
+footer{background: none;}
+
+footer p, footer a{color: #000; }
+
+#site-title,  #site-description {
+	float: none;
+	margin: 0;
+	padding:0;
+	line-height: 1.4em;
+}
+#site-title {
+	font-size: 13pt;
+}
+
+
+/*tabbed content*/
+.nav.nav-pills, .carousel-indicators, .carousel-control.left, .carousel-control.right{display: none;}
+.tab-content > .tab-pane, .carousel-inner > .item {display: block !important; opacity: 1 !important; clear: both; padding: 1em 0px;}
+
