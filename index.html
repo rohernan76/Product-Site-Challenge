@@ -64,22 +64,7 @@
 
         <h1 id="beer-styles" class=""><a href="https://www.iBYOB.com/beer-styles" title="Beer Styles"><img src="beer-styles-rv_Fotor_sm.jpg" alt="Beer Styles" class="hidden-print"></a></h1>
         
-        <nav class="navbar navbar-default" id="simple-styles">
-          <ul class="nav navbar-nav justified">
-            <li class="form">
-              <form class="navbar-form navbar-left">
-              <div class="form-group"><i class="fa fa-search"></i> 
-            
 
-                <span class="twitter-typeahead" style="position: relative; display: inline-block;">
-                  <input class="tt-hint" type="text" autocomplete="off" spellcheck="off" disabled="" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);">
-                  <input id="search" class="form-control tt-query" name="search" type="text" placeholder="Find your Style..." onfocus="if (this.value == 'Find your Style...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Find your Style...';}" value="Find your Style..." autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;">
-                  <span style="position: absolute; left: -9999px; visibility: hidden; white-space: nowrap; font-family: futura-pt, Futura, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 17px; text-rendering: auto; text-transform: none;"></span>
-                  <span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"></span>
-                </span>
-              </div> 
-            </form>
-          </li>
 
 <!--           <li id="families" class="dropdown">
             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Style Families to Choose From 
@@ -93,8 +78,7 @@
               <li><a href="https://www.iBYOB.com/parent/stouts">Stouts</a></li>
             </ul>
           </li>        -->
-        </ul>
-      </nav>
+ 
 
             <div class="" id="tags">
                 <label class="checkbox-inline"><input type="radio" name="tag" value="4130">Sour, Tart &amp; Funky</label>
@@ -107,7 +91,8 @@
             </div>       
 
 </div>
-  <br>
+<br>
+<!--  For some reason or another my dropdown menu, Style Families, is not working correctly. -->
 <div class="row">
   <div class="col-lg-6">
     <div class="input-group">
@@ -149,7 +134,42 @@
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->
-      
+<br>
+        <!--#style-filters - code borrowed from Craftbeer.com/beer-styles -->
+        
+        <ul id="styles">
+          <li class="style">
+             <a href="https://www.craftbeer.com/styles/amber-ale"> 
+                <span class="caption">
+                  <img src="Amer_Amber_Ale.jpg" class="logo" />
+                  <h2>
+                    <span>American Amber Ale</span>
+                  </h2>
+                  <p>American-style amber ales have medium-high to high maltiness with medium to low caramel character. They are characterized by American-variety...
+                  </p>
+                  <p class="more">Learn More</p>
+                </span>
+                    
+             </a>
+             <h2>American Amber Ale</h2>
+             </li>
+            <li class="style">
+             <a href="https://www.craftbeer.com/styles/american-black-ale"> 
+                <span class="caption">
+                  <img src="Amer_Black_Ale.jpg" class="logo" />
+                    <h2>
+                        <span>American Black Ale</span>
+                    </h2>
+                    <p>Characterized by the perception of caramel malt and dark roasted malt flavor and aroma. Hop bitterness is perceived to be medium-high...
+                    </p>
+                    <p class="more">Learn More</p>
+                    </span>
+
+              </a>
+              <h2>American Black Ale</h2>
+              </li>
+        </ul><!--#styles-->
+
     <h1 class="website_logo">
           <table>
           <tr>
